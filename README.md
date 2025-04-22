@@ -5,6 +5,7 @@
 ### turn_left()
 ### put_beeper()
 ### pick_beeper()
+### front_is_clear()
 
 ## from karel.stanfordkarel import *
 
