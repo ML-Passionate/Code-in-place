@@ -1,4 +1,4 @@
-# Code in place 2025 - Stanford
+# Code in place (2025) - Stanford
 
 ## Main functions
 ### move()
