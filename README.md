@@ -30,6 +30,10 @@
 ### beepers_in_bag()
 ### no_beepers_in_bag()
 ---
+### random(p)
+### paint_corner(color)
+### corner_color_is(color)
+---
 ## from karel.stanfordkarel import *
 
 ## if __name__ == "__main__":
