@@ -1,3 +1,4 @@
+#
 #  Code in place - Hospital Karel
 #  By Ricardo Monteiro
 #  Released: 24/04/2025
@@ -17,27 +18,27 @@ def main():
 
             # put beepers going up
             turn_left()
-            going_up()
+            place_beepers_upward()
 
             # go to other avenue
             turn_right()
             move()
 
             # put beepers going down
-            going_down()
+            place_beepers_downward()
             turn_left()
             
         # check if is not the end
         if front_is_clear():
             move()
 
-def going_up():
+def place_beepers_upward():
     # put 2 beepers going up
     for n in range(2):
         move()
         put_beeper()
 
-def going_down():
+def place_beepers_downward():
     # put 3 beepers going down
     turn_right()
     for i in range(2):
@@ -46,6 +47,7 @@ def going_down():
     put_beeper()
 
 def turn_right():
+    # create a turn right feature based on turn_lefts
     for i in range(3):
         turn_left()
 
