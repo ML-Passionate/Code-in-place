@@ -6,7 +6,12 @@ def main():
         row_odd()
         move_up()
         row_even()
-        move_up()
+        if left_is_clear():
+            turn_left()
+            move()
+            turn_right()
+            if left_is_blocked():
+                row_odd()
     go_to_case1()
 
 def go_to_case1():
@@ -34,8 +39,10 @@ def row_odd():
     while front_is_clear():
         put_beeper()
         safe_move()
-        safe_move()
-        
+        if front_is_clear():
+            move()
+            if front_is_blocked():
+                put_beeper()
     go_to_start()
     
 def go_to_start():
