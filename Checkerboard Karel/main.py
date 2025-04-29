@@ -36,6 +36,8 @@ def row_even():
     
 
 def row_odd():
+    if front_is_blocked():
+        put_beeper()
     while front_is_clear():
         put_beeper()
         safe_move()
